@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Casino Paradise - Guillermo Ramirez</title>
+    <link rel="icon" href="images/casinoparadiselogotrans.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="mainLogoDiv">
+        <img id="mainLogoImage" src="images/casinoparadisetrans.png" alt="Casino Paradise">
+    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="finalProject.html"><img src="images/logonavbartrans.png" height="40px" width="auto" alt="Casino Paradise"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav" style="margin-left:20px;">
+                    <li><a href="finalProject.html">Home</a></li>
+                    <li class='active'><a href="games.html"><span class="glyphicon glyphicon-book"></span>&nbspCard Games</a></li>
+                    <li><a href="reserve.html"><span class="glyphicon glyphicon-briefcase"></span>&nbspReserve a Night
+                            with Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <h2 style="text-align:center;font-size:40px;color:#ffce2e;text-shadow: 0px 2px 3px #111;">Poker/Texas Hold' em</h2><br>
+
+    <div class = "boxShadow bgcardtable body2" style="background-size:cover;width:50%;margin:0 auto;padding-top:100px;padding-bottom:100px;">
+        <div id='dealer' style="width:50%;margin:0 auto;">
+            <!--<img id='dcard1' name='dcard' src='https://www.cs.csubak.edu/~derrick/cs2680/examples/images/3.png'>-->
+            <img id='dcard1' name='dcard' src='//www.cs.csubak.edu/~derrick/cs2680/examples/images/b1fv.png''>
+        <!--<img id='
+                dcard2' name='dcard' src='https://www.cs.csubak.edu/~derrick/cs2680/examples/images/b1fv.png'>-->
+            <img id='dcard2' name='dcard' src='//www.cs.csubak.edu/~derrick/cs2680/examples/images/b1fv.png'>
+        </div>
+        <hr>
+        <div id='player' style="width:50%;margin:0 auto;">
+            <!--<img name='pcard' src='https://www.cs.csubak.edu/~derrick/cs2680/examples/images/25.png'>  pcard[0] -->
+            <!--<img name='pcard' src='https://www.cs.csubak.edu/~derrick/cs2680/examples/images/35.png'>  pcard[1] -->
+            <img name='pcard' src='//www.cs.csubak.edu/~derrick/cs2680/examples/images/b1fv.png'> <!-- pcardImg[0] -->
+            <img name='pcard' src='//www.cs.csubak.edu/~derrick/cs2680/examples/images/b1fv.png'> <!-- pcardImg[1] -->
+            <img name='pcard' src='//www.cs.csubak.edu/~derrick/cs2680/examples/images/b1fv.png'> <!-- pcardImg[2] -->
+            <img name='pcard' src='//www.cs.csubak.edu/~derrick/cs2680/examples/images/b1fv.png'> <!-- pcardImg[3] -->
+            <img name='pcard' src='//www.cs.csubak.edu/~derrick/cs2680/examples/images/b1fv.png'> <!-- pcardImg[4] -->
+        </div>
+
+        <div class='controlBtn' style="width:50%;margin:0 auto;">
+            <button id='dealBtn'>Deal</button>
+            <button id='hitBtn'>Hit</button>
+            <button id='standBtn'>Stand</button>
+            <button id='surrenderBtn'>Surrender</button>
+        </div>
+    </div>
+
+    <!-- include card object library -->
+    <script src='cardObject.js'></script>
+    <script src='pokerGameEngine.js'></script>
+
+    <!-- my script for blackjack -->
+    
+
+    <br><br><hr><br><br>
+
+    <h2 style="text-align:center;font-size:40px;color:#ffce2e;text-shadow: 0px 2px 3px #111;">Poker Hand Rankings</h2><br>
+
+    <div class="container">
+            <button type="button" id="viewCardRankings" class="btn btn-secondary btn-lg" style="display:block;margin: 0 auto;text-shadow: 0px 2px 3px #444;">View Card Rankings</button>
+
+        <!-- <img style="display:block;margin:auto;" class="boxShadow" height="600px;" width="auto;" src='images/pokerhandrankings.png'> -->
+    </div> 
+
+    <!-- <div class="container">
+        <img style="display:block;margin:auto;" class="boxShadow" height="600px;" width="auto;" src='images/pokerhandrankings.png'>
+    </div> -->
+
+    <br><br><br><br>
+</body>
+
+<footer>
+    <div id="footerDiv" class="navbar footer-inverse">
+        <p style="padding-top:30px;">© 2019 Casino Paradise. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    
+</script>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Casino Paradise - Guillermo Ramirez</title>
+    <link rel="icon" href="images/casinoparadiselogotrans.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="mainLogoDiv">
+        <img id="mainLogoImage" src="images/casinoparadisetrans.png" alt="Casino Paradise">
+    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="finalProject.html"><img src="images/logonavbartrans.png" height="40px" width="auto" alt="Casino Paradise"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav" style="margin-left:20px;">
+                    <li><a href="finalProject.html">Home</a></li>
+                    <li class='active'><a href="games.html"><span class="glyphicon glyphicon-book"></span>&nbspCard
+                            Games</a></li>
+                    <li><a href="reserve.html"><span class="glyphicon glyphicon-briefcase"></span>&nbspReserve a Night
+                            with Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <h2 style="text-align:center;font-size:40px;color:#ffce2e;text-shadow: 0px 2px 3px #111;">Blackjack</h2><br>
+
+    <div class="boxShadow bgcardtable body2" style="background-size:cover;width:50%;margin:0 auto;padding-top:100px;padding-bottom:100px;">
+
+
+        <div id='dealer' class='player' style="width:50%;margin:0 auto;">
+            <!--<img id='dcard1' name='dcard' src='https://www.cs.csubak.edu/~derrick/cs2680/examples/images/3.png'>-->
+            <img id='dcard1' name='dcard' src='//www.cs.csubak.edu/~derrick/cs2680/examples/images/b1fv.png'>
+            <!--<img id='dcard2' name='dcard' src='https://www.cs.csubak.edu/~derrick/cs2680/examples/images/b1fv.png'>-->
+            <img id='dcard2' name='dcard' src='//www.cs.csubak.edu/~derrick/cs2680/examples/images/b1fv.png'>
+            <h2 style="text-align:center;color:white; text-shadow: 0px 2px 3px #111;"><span id="dTotal"></span></h2>
+        </div>
+
+        <hr>
+        <div id='player' class='player' style="width:50%;margin:0 auto;">
+            <!--<img name='pcard' src='https://www.cs.csubak.edu/~derrick/cs2680/examples/images/25.png'>  pcard[0] -->
+            <!--<img name='pcard' src='https://www.cs.csubak.edu/~derrick/cs2680/examples/images/35.png'>  pcard[1] -->
+            <img name='pcard' src='//www.cs.csubak.edu/~derrick/cs2680/examples/images/b1fv.png'> <!-- pcardImg[0] -->
+            <img name='pcard' src='//www.cs.csubak.edu/~derrick/cs2680/examples/images/b1fv.png'> <!-- pcardImg[1] -->
+            <img name='pcard' src=''> <!-- pcardImg[2] -->
+            <img name='pcard' src=''> <!-- pcardImg[3] -->
+            <img name='pcard' src=''> <!-- pcardImg[4] -->
+            <h2 style="text-align:center;color:white; text-shadow: 0px 2px 3px #111;"><span id="pTotal"></span></h2>
+        </div>
+        <div>
+
+        </div>
+
+        <div class='controlBtn' style="width:50%;margin:0 auto;padding-top:20px;">
+            <button class='button1'id='dealBtn'>Deal</button>
+            <button class='button2'id='hitBtn'>Hit</button>
+            <button class='button3'id='standBtn'>Stand</button>
+            <!-- <button id='surrenderBtn'>Surrender</button> -->
+        </div>
+    </div>
+
+    <div class='playerScoreText' style="margin-top:30px;">
+        <div class="row">
+            <h1 style="text-align:center;color:#ffce2e; text-shadow: 0px 2px 3px #111;"><span id='winText'></span></h1>
+            <div class="row">
+                <div class="col-lg-5"></div>
+                <div class="col-lg-1">
+                    <h2 style="text-align:center;color:rgb(230, 230, 230);text-shadow: 0px 2px 3px #111;">Wins: <span
+                            id='wins'>0</span></h2>
+                </div>
+                <div class="col-lg-1">
+                    <h2 style="text-align:center;color:rgb(230, 230, 230);text-shadow: 0px 2px 3px #111;">Losses: <span
+                            id='losses'>0</span></h2>
+                </div>
+                <div class="col-lg-5"></div>
+            </div>
+        </div><br><br><br><br>
+
+        <div style="text-align: center;">
+            <button type="button" class="btn btn-secondary btn-lg" id="instructionsButton" style="margin: 0 auto;text-shadow: 0px 2px 3px #444;">How
+                to Play
+            </button>
+            <br><br><br>
+            <div class="row" id="instructionsText">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <h2 style="text-align:justify;color:rgb(230, 230, 230);text-shadow: 0px 2px 3px #111;">Your goal in Blackjack 
+                        is to get as close as you can to the value 21, while also getting a higher value than
+                        the opponent.
+                        To play, you will first need to click the "Deal" button. 
+                        To add an extra card to your hand, click the 'hit' button. 
+                        Once you feel like you are close to 21, click the 'stand' button.
+                        Clicking 'stand' will reveal the opponent's facedown card.
+                        If your card values are greater than the opponent's, you win!
+                        If your opponent's card values are greater than yours, you lose.
+                        <span style="text-align:center;color:#ffce2e;"><br><br>Note: ACE cards always hold the value
+                            11.</span>
+                    </h2>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div><br><br>
+        </div>
+</body>
+
+<!-- my script for blackjack -->
+<script src='blackjack.js'></script>
+
+<br><br><br><br>
+</body>
+
+<footer>
+    <div id="footerDiv" class="navbar footer-inverse">
+        <p style="padding-top:30px;">© 2019 Casino Paradise. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    $("#instructionsText").hide("slow");
+    $("#instructionsButton").click(function () {
+        $("#instructionsText").slideToggle("slow");
+    });
+</script>
+
+</html>

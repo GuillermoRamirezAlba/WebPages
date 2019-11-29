@@ -1,0 +1,453 @@
+  html {
+      background: #222;
+  }
+
+  body {
+      background: #424242;
+  }
+
+  footer {
+      background: #222;
+      position: relative;
+      height: 150px;
+      clear: both;
+  }
+
+  .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar .navbar-inverse .navbar-nav > .active > a:hover {
+    color: #ffce2e;
+    background-color: #080808;
+}
+
+  .lightgraybackground {
+      background: #424242;
+  }
+
+  .navbar-custom {
+      color: #d6d6d6;
+  }
+
+  .navbar-inverse .navbar-brand {
+      color: rgb(212, 212, 212);
+  }
+
+  .container h2 {
+      color: rgb(212, 212, 212);
+  }
+
+  .container h3 {
+    color: rgb(212, 212, 212);
+}
+
+.container h4 {
+    color: rgb(212, 212, 212);
+}
+.panel-heading h4 {
+    color: black;
+
+}
+  .container p {
+      color: rgb(192, 192, 192);
+  }
+
+  .navbar-inverse {
+      background-color: #222;
+      border-color: transparent;
+      border-bottom: 2px solid rgb(207, 181, 123);
+  }
+
+  .footer-inverse {
+      background-color: #222;
+      border-color: transparent;
+      border-top: 2px solid rgb(207, 181, 123);
+  }
+
+  .container-fluid {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: 335px;
+      margin-left: 335px;
+  }
+
+  #mainLogoImage {
+      background: #222;
+      width: 400px;
+      height: auto;
+      display: block;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 30px;
+  }
+
+  #footerDiv {
+      background: #222;
+      text-align: center;
+      color: rgb(151, 151, 151);
+  }
+
+  #mainLogoDiv {
+      background: #222;
+  }
+
+  .form-control:focus {
+      border-color: rgb(229, 186, 45);
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(229, 186, 45);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(229, 186, 45);
+  }
+
+  .btn-secondary {
+      color: #222;
+      background-color: #ffce2e;
+      border-color: #ffce2e;
+  }
+
+  .btn-secondary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+      color: #222;
+      background-color: #bb920e;
+      border-color: #bb920e;
+  }
+
+  .panel-primary>.panel-heading {
+      color: #222;
+      background-color: #d8a708;
+  }
+
+  .panel-primary {
+      border-color: #d8a708;
+      border: 1px solid #d8a708;
+  }
+
+  body {
+    font-family: 'Work Sans', sans-serif;
+   }
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Crimson Text', serif;
+   }
+
+   .hovereffect {
+    height: auto;
+    width: 660px;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    /* background: rgba(17, 17, 17, 0.877); */
+    background: black;
+  }
+  
+  .hovereffect .overlay {
+    height: auto;
+    width: 660px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+  }
+  
+  .hovereffect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px,0,0);
+    transform: translate3d(-10px,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .hovereffect:hover img {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+  
+  .hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 0.5em 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .hovereffect h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+  }
+  
+  .hovereffect:hover h2:after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+  
+  .hovereffect a, .hovereffect p {
+    color: #FFF;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+  }
+  
+  .hovereffect:hover a, .hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  .hovereffect2 {
+    height: auto;
+    width: 330px;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: rgba(17, 17, 17, 0.877);
+  }
+  
+  .hovereffect2 .overlay {
+    height: auto;
+    width: 330px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+  }
+  
+  .hovereffect2 img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px,0,0);
+    transform: translate3d(-10px,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .hovereffect2:hover img {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+  
+  .hovereffect2 h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 0.5em 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .hovereffect2 h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+  }
+  
+  .hovereffect2:hover h2:after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+  
+  .hovereffect2 a, .hovereffect p {
+    color: #FFF;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+  }
+  
+  .hovereffect2:hover a, .hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+
+  hr{
+    width:30%;
+    text-align:center;
+  }
+
+  div.polaroid {
+    background: #333;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+
+  div.boxShadow {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  div.container {
+    padding: 10px;
+  }
+
+  .label{
+    text-shadow: 0px 2px 3px #555;
+  }
+
+  .well2{
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #666;
+    border: 1px solid #555;
+    border-radius: 4px;
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #111;
+    background-color: #ddd;
+    background-image: none;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+.bgcardtable {
+    background-image: url('images/cardtable2.jpg');
+}
+
+.body2{
+    border: rgb(129, 88, 0) solid 2px;
+    box-sizing:border-box;
+    border-width: 10px;
+    border-style: groove; /* groove, dotted, dashed, double*/
+    border-top-width: 5px;
+    border-top-style: double;
+    border-bottom-width: 2px;
+    border-bottom-style: double;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* div {
+    text-align: center;
+    width: 500px; 
+    margin: 0 auto; 
+} */
+
+button {
+        background-color: black;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        /* width: 100px; */
+}
+
+.button1 {
+    background-color: #702c2c;
+	border: 2px solid #702c2c;
+	color: white;
+}
+
+.button1:hover {
+    background-color: #824e4e;
+	border: 2px solid #824e4e;
+}
+
+.button2 {
+    background-color: #a37a51;
+	border: 2px solid #a37a51;
+    color: white;
+}
+
+.button2:hover {
+    background-color: #967d64;
+    border: 2px solid #967d64;
+}
+
+.button3 {
+    background-color: black;
+	border: 2px solid black;
+    color: white;
+}
+
+.button3:hover {
+    background-color: white;
+	color: black;
+	border: 2px solid white;	
+}
+
+.hide{visibility: hidden;}
+
+.unhide{visibility: visible;}
+
+#gameTitle{
+    background: brown;
+}
+
+.playerScoreText{
+    
+}
